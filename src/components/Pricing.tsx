@@ -2,9 +2,8 @@ import { Reveal } from "./Reveal";
 
 const plans = [
   {
-    name: "Старт",
-    price: "1 990 сом / мес",
-    highlight: false,
+    name: "Базовый",
+    price: "4 000 сом / мес",
     desc: "Для небольших студий и кабинетных специалистов.",
     items: [
       "До 5 сотрудников",
@@ -15,9 +14,8 @@ const plans = [
     ]
   },
   {
-    name: "Бизнес",
-    price: "3 990 сом / мес",
-    highlight: true,
+    name: "Стандарт",
+    price: "8 000 сом / мес",
     desc: "Оптимальный пакет для салонов, детейлинга и клиник.",
     items: [
       "До 20 сотрудников",
@@ -28,9 +26,8 @@ const plans = [
     ]
   },
   {
-    name: "Премиум",
-    price: "по запросу",
-    highlight: false,
+    name: "Бизнес",
+    price: "15 000 сом / мес",
     desc: "Для сетей и сложных процессов с приоритетной поддержкой.",
     items: [
       "Несколько филиалов",
@@ -49,7 +46,7 @@ export default function Pricing() {
         <div className="section-head">
           <div>
             <div className="section-eyebrow">Тарифы</div>
-            <h2 className="section-title">7 дней теста на любом тарифе</h2>
+            <h2 className="section-title">Запуск Octō CRM за один день</h2>
           </div>
           <p className="section-subtitle">
             Привяжите карту и получите доступ ко всем функциям. Списание — только
@@ -58,23 +55,22 @@ export default function Pricing() {
         </div>
         <div className="pricing-grid">
           {plans.map((plan, index) => (
-            <Reveal key={plan.name} delay={index * 0.08}>
-              <div className={`pricing-card ${plan.highlight ? "highlight" : ""}`}>
-                <div>
+            <Reveal key={plan.name} delay={index * 0.08} className="pricing-reveal">
+              <div className="pricing-card">
+                <div className="pricing-header">
                   <div className="tag">{plan.name}</div>
-                  <h3 style={{ margin: "10px 0" }}>{plan.price}</h3>
-                  <p style={{ color: "var(--text-2)" }}>{plan.desc}</p>
+                  <h3 className="pricing-price">{plan.price}</h3>
+                  <p className="pricing-desc">{plan.desc}</p>
                 </div>
-                <ul>
+                <ul className="pricing-features">
                   {plan.items.map((item) => (
-                    <li key={item}>• {item}</li>
+                    <li key={item}>
+                      <span className="check-icon">✓</span> {item}
+                    </li>
                   ))}
                 </ul>
-                <a
-                  className={`btn ${plan.highlight ? "primary" : "ghost"}`}
-                  href="#trial"
-                >
-                  {plan.name === "Премиум" ? "Связаться с менеджером" : "Попробовать 7 дней"}
+                <a className="btn primary" href="https://octopay.online/" target="_blank" rel="noopener noreferrer">
+                  Попробовать 14 дней
                 </a>
               </div>
             </Reveal>

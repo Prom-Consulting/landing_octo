@@ -4,7 +4,6 @@ import Hero from "@/components/Hero";
 import HowItWorks from "@/components/HowItWorks";
 import Capabilities from "@/components/Capabilities";
 import Segments from "@/components/Segments";
-import Migration from "@/components/Migration";
 import AIAssistant from "@/components/AIAssistant";
 import Pricing from "@/components/Pricing";
 import Cases from "@/components/Cases";
@@ -23,7 +22,6 @@ export default function Home() {
       <HowItWorks />
       <Capabilities />
       <Segments />
-      <Migration />
       <AIAssistant />
       <Pricing />
       <Cases />

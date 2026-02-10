@@ -17,7 +17,7 @@ const cases = [
 
 const videos = [
   {
-    title: "Обзор Octo CRM за 5 минут",
+    title: "Обзор Octō CRM за 5 минут",
     text: "Покажем ключевые модули и сценарии работы администратора."
   },
   {
@@ -40,7 +40,7 @@ export default function Cases() {
             <h2 className="section-title">Живые примеры и реальные истории</h2>
           </div>
           <p className="section-subtitle">
-            Видеообзоры, обучающие ролики и кейсы, которые показывают эффект Octo CRM.
+            Видеообзоры, обучающие ролики и кейсы, которые показывают эффект Octō CRM.
           </p>
         </div>
         <div className="grid three" style={{ marginBottom: 28 }}>

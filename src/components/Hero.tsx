@@ -49,7 +49,7 @@ export default function Hero() {
           </Reveal>
           <Reveal delay={0.1}>
             <h1 className="hero-title">
-              <span className="accent-text">Octo CRM</span> — вся операционка бизнеса и
+              <span className="accent-text">Octō CRM</span> — вся операционка бизнеса и
               AI-ассистент в одной системе
             </h1>
           </Reveal>
@@ -61,10 +61,10 @@ export default function Hero() {
           </Reveal>
           <Reveal delay={0.3}>
             <div className="hero-actions" id="trial">
-              <a className="btn primary" href="#pricing">
-                Попробовать 7 дней бесплатно
+              <a className="btn primary" href="https://octopay.online/" target="_blank" rel="noopener noreferrer">
+                Попробовать 14 дней бесплатно
               </a>
-              <a className="btn ghost" href="#login">
+              <a className="btn ghost" href="https://octocrm.beauty/" target="_blank" rel="noopener noreferrer">
                 Войти в личный кабинет
               </a>
             </div>
@@ -91,7 +91,7 @@ export default function Hero() {
             </div>
             <div className="trust-strip tilt-card">
               <div className="trust-item">
-                <strong>7 дней</strong>
+                <strong>14 дней</strong>
                 <span>полный доступ</span>
               </div>
               <div className="trust-item">

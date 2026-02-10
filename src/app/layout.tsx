@@ -14,9 +14,14 @@ const unbounded = Unbounded({
 });
 
 export const metadata = {
-  title: "Octo CRM — система для салонов, детейлинга и клиник",
+  title: "Octō CRM — система для салонов, детейлинга и клиник",
   description:
-    "Octo CRM: записи, клиенты, финансы, склад, AI-ассистент и перенос данных. 7 дней бесплатно с привязкой карты."
+    "Octō CRM: записи, клиенты, финансы, склад, AI-ассистент и перенос данных. 14 дней бесплатно с привязкой карты.",
+  icons: {
+    icon: "/PROM_logo_small_blue (1).svg",
+    shortcut: "/PROM_logo_small_blue (1).svg",
+    apple: "/PROM_logo_small_blue (1).svg"
+  }
 };
 
 export default function RootLayout({

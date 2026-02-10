@@ -14,7 +14,7 @@ export default function AIAssistant() {
         <div className="section-head">
           <div>
             <div className="section-eyebrow">AI-ассистент</div>
-            <h2 className="section-title">Чат-бот внутри Octo CRM</h2>
+            <h2 className="section-title">Чат-бот внутри Octō CRM</h2>
           </div>
           <p className="section-subtitle">
             Бот подключается к WhatsApp, Telegram и Instagram, ведет переписку и

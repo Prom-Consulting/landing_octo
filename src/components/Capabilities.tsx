@@ -41,7 +41,7 @@ export default function Capabilities() {
       <div className="container">
         <div className="section-head">
           <div>
-            <div className="section-eyebrow">Возможности Octo CRM</div>
+            <div className="section-eyebrow">Возможности Octō CRM</div>
             <h2 className="section-title">Управляйте бизнесом в одном окне</h2>
           </div>
           <p className="section-subtitle">
@@ -51,8 +51,8 @@ export default function Capabilities() {
         </div>
         <div className="grid four">
           {features.map((feature, index) => (
-            <Reveal key={feature.title} delay={index * 0.03}>
-              <div className="card">
+            <Reveal key={feature.title} delay={index * 0.03} className="card-reveal">
+              <div className="card card-equal">
                 <h3 style={{ marginBottom: 10 }}>{feature.title}</h3>
                 <p style={{ color: "var(--text-2)", fontSize: "0.95rem" }}>
                   {feature.text}

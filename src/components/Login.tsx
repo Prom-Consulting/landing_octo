@@ -18,7 +18,7 @@ export default function Login() {
             <div className="card" style={{ padding: 28 }}>
               <h3 style={{ marginBottom: 12 }}>Создать аккаунт</h3>
               <p style={{ color: "var(--text-2)", marginBottom: 16 }}>
-                7 дней бесплатно, далее автосписание по выбранному тарифу.
+                14 дней бесплатно, далее автосписание по выбранному тарифу.
               </p>
               <div className="grid" style={{ gap: 12 }}>
                 <div className="card" style={{ padding: 12 }}>
@@ -31,8 +31,8 @@ export default function Login() {
                   Запуск пробного периода
                 </div>
               </div>
-              <a className="btn primary" href="#pricing" style={{ marginTop: 18 }}>
-                Перейти к тарифам
+              <a className="btn primary" href="https://octopay.online/" target="_blank" rel="noopener noreferrer" style={{ marginTop: 18 }}>
+                Начать бесплатно
               </a>
             </div>
             <div className="card" style={{ padding: 28 }}>
@@ -48,8 +48,8 @@ export default function Login() {
                   Доступ к модулям CRM
                 </div>
               </div>
-              <a className="btn ghost" href="#contacts" style={{ marginTop: 18 }}>
-                Связаться с поддержкой
+              <a className="btn ghost" href="https://octocrm.beauty/" target="_blank" rel="noopener noreferrer" style={{ marginTop: 18 }}>
+                Войти в кабинет
               </a>
             </div>
           </div>

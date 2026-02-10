@@ -40,14 +40,14 @@ export default function Segments() {
             <h2 className="section-title">Настроено под три ключевые ниши</h2>
           </div>
           <p className="section-subtitle">
-            Octo CRM адаптируется под процессы салонов, детейлинга и клиник,
+            Octō CRM адаптируется под процессы салонов, детейлинга и клиник,
             чтобы вы получали максимум пользы без доработок.
           </p>
         </div>
         <div className="grid three">
           {segments.map((segment, index) => (
-            <Reveal key={segment.title} delay={index * 0.08}>
-              <div className="card segment-card">
+            <Reveal key={segment.title} delay={index * 0.08} className="card-reveal">
+              <div className="card segment-card card-equal">
                 <div className="tag">Сегмент</div>
                 <div className="segment-title">{segment.title}</div>
                 <p style={{ color: "var(--text-2)", marginBottom: 16 }}>
